@@ -174,7 +174,7 @@ public class CalendarAdapter extends BaseAdapter
 
     private int getCellHeightDP()
     {
-        int cellHeight = this.height/6;
+        int cellHeight = this.height/5;
 
         return cellHeight;
     }

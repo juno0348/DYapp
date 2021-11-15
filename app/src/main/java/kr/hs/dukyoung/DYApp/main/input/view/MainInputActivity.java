@@ -1,5 +1,6 @@
 package kr.hs.dukyoung.DYApp.main.input.view;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -18,6 +19,9 @@ public class MainInputActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_input);
         ImageButton button = findViewById(R.id.button);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
         EditText grade = (EditText)findViewById(R.id.grade_edit);
         EditText stuclass = (EditText)findViewById(R.id.stuclass_edit);
